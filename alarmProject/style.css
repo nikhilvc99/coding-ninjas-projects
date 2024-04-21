@@ -1,0 +1,89 @@
+
+  
+  /* Style for each alarm entry */
+  body {
+    margin-left: 20%;
+    height: 50vh;
+    border: black;
+    border-radius: 2px;
+  }
+  #alarmList div {
+    display: flex;
+    align-items: center;
+    width: 27.5vw;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #digiClock {
+    margin-left: 6%;
+    font-size: 6vh;
+  }
+  /* Style for the delete button */
+  .deleteButton {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 5%;
+  }
+  
+  .deleteButton:hover {
+    background-color: #c82333;
+  }
+  
+  /* Style for the set alarm button */
+  #setAlarmBtn {
+    margin-top: 20px;
+    margin-left: 6%;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #setAlarmBtn:hover {
+    background-color: #0056b3;
+  }
+  #alarmRing {
+    display: none;
+    position: fixed;
+    top: 15vh;
+    left: 25vw;
+    text-align: center;
+    margin-top: 20px;
+    border-color: black;
+    border-width: 50px;
+    background-color: rgba(208, 205, 205,0.5);
+}
+
+.fa-bell {
+    font-size: 48px; 
+}
+
+.snoozeBtn {
+    margin-top: 10px;
+}
+
+/* Styling for the snooze and close buttons */
+.snoozeBtn button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.snoozeBtn button:hover {
+    background-color: #45a049; /* Darker green */
+}

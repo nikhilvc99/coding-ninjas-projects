@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/b3348ae33f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="digiClock"></div>                <!-- to display clock -->
+    <div id="alarmRing">                          <!-- to ring alarm-->
+        <i class="fa-solid fa-bell fa-shake"></i>
+        <audio src="mixkit-alarm-tone-996.wav" id="alarmSound" loop></audio>
+        <div class="snoozeBtn">
+            <button id="snooze">snooze</button>
+            <button id="closeBtn">close</button>
+        </div>
+    </div>
+    <div id="setAlarm">                  
+        <input type="number" value="12" min="1" max="12"     id="hourVal">
+        <input type="number" value="00" min="0" max="60" id="minsVal">
+        <input type="number" value="00" min="0" max="60" id="secsVal">
+        <select name="AMPM" id="AmPm">
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+        </select>
+        <button id="setAlarmBtn">Set Alarm</button>
+    </div>
+    <div id="alarms">
+        <h1>Alarms</h1>
+       <div id="alarmList"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
